@@ -3786,7 +3786,7 @@
 	)
 	(text "Right Motor Driver"
 		(exclude_from_sim no)
-		(at 231.14 165.1 0)
+		(at 231.14 162.052 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3806,7 +3806,7 @@
 	)
 	(text "Left Motor Driver"
 		(exclude_from_sim no)
-		(at 151.384 164.846 0)
+		(at 151.384 161.798 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3831,12 +3831,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0fe0099f-6daf-4b2e-94e0-c3538dd939a5")
-	)
-	(junction
-		(at 214.63 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12e9c3cf-2cc2-4c06-8c32-548286fd053a")
 	)
 	(junction
 		(at 71.12 38.1)
@@ -3975,12 +3969,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2fa6d2e-12dc-49dd-b2d3-3232b9471277")
-	)
-	(junction
-		(at 133.35 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a9826b8e-8c88-47ed-b23d-a8c5462cb94c")
 	)
 	(junction
 		(at 146.05 158.75)
@@ -4138,16 +4126,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 146.05) (xy 138.43 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03af6f8d-53a5-4028-ba05-06f256295f64")
-	)
-	(wire
-		(pts
 			(xy 128.27 101.6) (xy 128.27 99.06)
 		)
 		(stroke
@@ -4195,16 +4173,6 @@
 			(type default)
 		)
 		(uuid "104f8aaf-9748-42e7-bb8e-5c3303cd2a02")
-	)
-	(wire
-		(pts
-			(xy 214.63 130.81) (xy 218.44 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "110b8c39-cd94-452b-b8d2-a04c52f4e87d")
 	)
 	(wire
 		(pts
@@ -4528,16 +4496,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 130.81) (xy 214.63 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "375eea89-de83-4eaf-9dd0-8ece7c944c43")
-	)
-	(wire
-		(pts
 			(xy 55.88 55.88) (xy 26.67 55.88)
 		)
 		(stroke
@@ -4615,6 +4573,16 @@
 			(type default)
 		)
 		(uuid "3fb27b2b-4054-4b6e-a7e2-5acc1531e0c7")
+	)
+	(wire
+		(pts
+			(xy 106.68 146.05) (xy 138.43 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40eefe14-b2a9-4d68-83ff-2433ae5e7e5c")
 	)
 	(wire
 		(pts
@@ -5358,6 +5326,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 146.05) (xy 218.44 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d786765-0b24-4218-84c2-5e8f379dd73d")
+	)
+	(wire
+		(pts
 			(xy 25.4 35.56) (xy 55.88 35.56)
 		)
 		(stroke
@@ -5618,16 +5596,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 146.05) (xy 218.44 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5b53c98-6039-4be4-a616-537137ae1bf7")
-	)
-	(wire
-		(pts
 			(xy 170.18 20.32) (xy 170.18 27.94)
 		)
 		(stroke
@@ -5695,16 +5663,6 @@
 			(type default)
 		)
 		(uuid "d2cb5b55-b2e2-4815-bc3d-371acc611dad")
-	)
-	(wire
-		(pts
-			(xy 133.35 130.81) (xy 133.35 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5064bec-9b59-41d0-9add-b0ceb3d99a44")
 	)
 	(wire
 		(pts
@@ -6018,7 +5976,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 130.81) (xy 214.63 130.81)
+			(xy 203.2 130.81) (xy 218.44 130.81)
 		)
 		(stroke
 			(width 0)
@@ -6910,7 +6868,7 @@
 			)
 		)
 	)
-	(global_label "Servo"
+	(global_label "RL Enable"
 		(shape input)
 		(at 96.52 60.96 0)
 		(fields_autoplaced yes)
@@ -6922,7 +6880,7 @@
 		)
 		(uuid "1752c27a-28df-49ac-9bcd-e68ba0766fed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.8012 60.96 0)
+			(at 109.2158 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7078,7 +7036,7 @@
 			)
 		)
 	)
-	(global_label "M Enable"
+	(global_label "FL Enable"
 		(shape input)
 		(at 106.68 130.81 180)
 		(fields_autoplaced yes)
@@ -7090,7 +7048,7 @@
 		)
 		(uuid "350423a1-722e-4749-a6ea-5e70c6374c07")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 94.8309 130.81 0)
+			(at 94.1656 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7195,6 +7153,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "FR Enable"
+		(shape input)
+		(at 203.2 146.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3fe876c4-2b97-4fa5-8d28-5f8fbcb8b685")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.4437 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -7630,7 +7612,7 @@
 			)
 		)
 	)
-	(global_label "GPIO 21"
+	(global_label "FR Enable"
 		(shape input)
 		(at 96.52 71.12 0)
 		(fields_autoplaced yes)
@@ -7642,7 +7624,7 @@
 		)
 		(uuid "96760ef9-f360-4aa7-8438-8bc38b88d0bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.4622 71.12 0)
+			(at 109.2763 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7726,7 +7708,7 @@
 			)
 		)
 	)
-	(global_label "GPIO 20"
+	(global_label "RR Enable"
 		(shape input)
 		(at 96.52 68.58 0)
 		(fields_autoplaced yes)
@@ -7738,7 +7720,7 @@
 		)
 		(uuid "9a4a54ab-d879-4ed5-a05b-29425b9cde62")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.4622 68.58 0)
+			(at 109.4577 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7750,7 +7732,7 @@
 			)
 		)
 	)
-	(global_label "M Enable"
+	(global_label "FL Enable"
 		(shape input)
 		(at 96.52 66.04 0)
 		(fields_autoplaced yes)
@@ -7762,7 +7744,7 @@
 		)
 		(uuid "9ba6c058-ed25-4ae8-a057-8e5f4009dd3a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.3691 66.04 0)
+			(at 109.0344 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8254,7 +8236,7 @@
 			)
 		)
 	)
-	(global_label "M Enable"
+	(global_label "FR Enable"
 		(shape input)
 		(at 203.2 130.81 180)
 		(fields_autoplaced yes)
@@ -8266,7 +8248,7 @@
 		)
 		(uuid "c66d37cc-6945-409c-99cf-6758057892cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.3509 130.81 0)
+			(at 190.4437 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8339,6 +8321,30 @@
 		(uuid "cddae277-dc30-4b05-883e-50fa41fbe9cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.645 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "RL Enable"
+		(shape input)
+		(at 106.68 146.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cdf2bfde-294d-43f2-a764-492b1133a7b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 93.9842 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9119,7 +9125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0095dea7-37a8-4492-a47c-6da7e4977f79")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 257.81 55.8098 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9217,7 +9223,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U1")
+					(reference "U3")
 					(unit 3)
 				)
 			)
@@ -9317,7 +9323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f6c9664-1131-4b4d-b45b-a03693f2ed23")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 257.81 29.1398 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9415,7 +9421,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U1")
+					(reference "U3")
 					(unit 4)
 				)
 			)
@@ -9848,7 +9854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cee3abf-97ec-43ad-a344-3f9df23cc826")
-		(property "Reference" "C4"
+		(property "Reference" "C1"
 			(at 107.95 103.2509 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9912,7 +9918,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C4")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -9931,7 +9937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "579413f2-5ac9-4ef8-94db-446f42829e55")
-		(property "Reference" "C6"
+		(property "Reference" "C4"
 			(at 201.93 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9995,7 +10001,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C6")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -10013,7 +10019,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fa07d70-8c59-4d39-bd57-848aa13f1581")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 155.8133 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10120,7 +10126,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -10221,7 +10227,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bf7b3fd-8dbf-4998-bddd-1cc50bb2708a")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 259.08 103.2509 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10285,7 +10291,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -10303,7 +10309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f9bf1b7-2382-46f5-9ef5-c35294e29797")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 180.34 31.6798 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10401,7 +10407,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -10419,7 +10425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "732fa705-6824-4672-99f1-7cff265a893e")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 205.74 41.8398 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10517,7 +10523,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U1")
+					(reference "U3")
 					(unit 2)
 				)
 			)
@@ -10535,7 +10541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74220093-fb7c-4f2e-951e-0113add0e735")
-		(property "Reference" "C7"
+		(property "Reference" "C5"
 			(at 217.17 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10599,7 +10605,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -10701,7 +10707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bfe8a25-9989-49f0-9ebc-083077822e49")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 144.78 25.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10765,7 +10771,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -11115,7 +11121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbd669d8-94d7-479e-902e-57ea52ac1b41")
-		(property "Reference" "C9"
+		(property "Reference" "C7"
 			(at 160.02 25.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11179,7 +11185,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C9")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -11278,7 +11284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1476a42-22f3-4ac1-8579-32346baa2840")
-		(property "Reference" "C3"
+		(property "Reference" "C2"
 			(at 120.65 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11342,7 +11348,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C3")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -11360,7 +11366,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e93da954-3149-45ce-a6fb-607875d58504")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 235.8233 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11467,7 +11473,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -11485,7 +11491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f913ca1e-fac6-49cd-aa3a-673951eb5a28")
-		(property "Reference" "C1"
+		(property "Reference" "C8"
 			(at 179.07 103.2509 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11549,7 +11555,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C1")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -11567,7 +11573,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fea11bbb-f743-40a1-9cfc-9a1b2fcb29f7")
-		(property "Reference" "C2"
+		(property "Reference" "C3"
 			(at 135.89 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11631,7 +11637,7 @@
 		(instances
 			(project "Reelfoot Rover"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
