@@ -15,6 +15,7 @@ are:
     SO1_Trig - Sonar 1 Trigger
     SO2_Trig - Sonar 2 Trigger
     SO3_Trig - Sonar 3 Trigger
+    SO_Echo  - Sonar echo pin
 
     Motor Direction Pins
     ====================
@@ -34,7 +35,6 @@ are:
     FR_Speed - Front Right Speed
     RR_Speed - Rear Right Speed
 """
-
 # Encoder Inputs
 FL_Enc=4
 RL_Enc=17
