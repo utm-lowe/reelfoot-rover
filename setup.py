@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'sonar_ring = reelfoot.sonar_ring_node:main',
+            'drive = reelfoot.drive_node:main',
         ],
     },
 )
