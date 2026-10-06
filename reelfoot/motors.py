@@ -7,7 +7,7 @@ The Reelfoot Rover controls four motors:
 These motors have an accompanying speed and direction setting.
 """
 import lgpio
-import pins as p
+from . import pins as p
 
 # Constants
 FORWARD = (1, 0)

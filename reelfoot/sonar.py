@@ -1,4 +1,4 @@
-import pins as p
+from . import pins as p
 import lgpio
 import time
 import threading
