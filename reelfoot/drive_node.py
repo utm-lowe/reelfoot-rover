@@ -10,6 +10,7 @@ counterclockwise. Speeds are open loop: max_linear and max_angular set
 which velocities map to full power.
 """
 import rclpy
+from std_msgs.msg import Int8
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 
@@ -35,9 +36,18 @@ class DriveNode(Node):
         self.moving = False
         self.last_cmd = self.get_clock().now()
 
+        # Declare publish rate parameter (same default as encoder node)
+        self.declare_parameter('publish_rate_hz', 20.0)
+        rate_hz = self.get_parameter('publish_rate_hz').value
+        timer_period = 1.0 / max(rate_hz, 0.001)
+        self._timer = self.create_timer(timer_period, self._publish_directions)
+        self._last_dir_vals = [0, 0, 0, 0]
         self.create_subscription(Twist, 'cmd_vel', self.on_cmd, 10)
-        self.create_timer(0.1, self.watchdog)
-        self.get_logger().info('drive ready, listening on cmd_vel')
+        self.pub_fl_dir = self.create_publisher(Int8, '/front_left/direction', 10)
+        self.pub_fr_dir = self.create_publisher(Int8, '/front_right/direction', 10)
+        self.pub_rl_dir = self.create_publisher(Int8, '/rear_left/direction', 10)
+        self.pub_rr_dir = self.create_publisher(Int8, '/rear_right/direction', 10)
+        self.watchdog_timer = self.create_timer(0.1, self.watchdog)
 
     def on_cmd(self, msg):
         """Mecanum inverse kinematics, normalized to [-1, 1] per wheel."""
@@ -59,6 +69,10 @@ class DriveNode(Node):
 
     def drive(self, wheels):
         self.moving = any(abs(w) > 0.01 for w in wheels)
+        # Store last direction values for publishing at configured rate.
+        self._last_dir_vals = [
+            0 if abs(w) < 0.01 else (1 if w > 0 else -1) for w in wheels
+        ]
         for motor, w, inv in zip(self.motors, wheels, self.invert):
             if inv:
                 w = -w
@@ -67,8 +81,15 @@ class DriveNode(Node):
                 motor.set_direction(m.BRAKE)
             else:
                 motor.set_direction(m.FORWARD if w > 0 else m.REVERSE)
-                # skip the dead zone where the motors hum but don't turn
                 motor.set_speed(self.min_pwm + (100 - self.min_pwm) * abs(w))
+
+    def _publish_directions(self):
+        # Publish the most recent direction values at the configured rate.
+        dirs = self._last_dir_vals
+        self.pub_fl_dir.publish(Int8(data=dirs[0]))
+        self.pub_fr_dir.publish(Int8(data=dirs[1]))
+        self.pub_rl_dir.publish(Int8(data=dirs[2]))
+        self.pub_rr_dir.publish(Int8(data=dirs[3]))
 
     def stop(self):
         self.drive([0.0, 0.0, 0.0, 0.0])

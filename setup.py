@@ -1,6 +1,7 @@
 from glob import glob
 from setuptools import setup
 
+
 package_name = 'reelfoot'
 
 setup(
