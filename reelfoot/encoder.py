@@ -1,5 +1,5 @@
 """
-The odometer module counts the number of ticks on each of the four encoders.
+The encoder module counts the number of ticks on each of the four encoders.
 
 In order to determine speed, these numbers should be checked periodically and
 divided by elapsed time.
